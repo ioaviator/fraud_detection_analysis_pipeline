@@ -1,0 +1,15 @@
+{
+  "name": "finguard-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "admin",
+    "database.password": "admin",
+    "database.dbname": "FinGuard_db",
+    "topic.prefix": "finguard",
+    "slot.name": "finguard_slot",
+    "publication.autocreate.mode": "filtered",
+    "table.include.list": "public.customers"
+  }
+}
