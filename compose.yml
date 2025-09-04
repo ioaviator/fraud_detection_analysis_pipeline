@@ -85,7 +85,7 @@ services:
   #   networks:
   #     - finguard
   postgres:
-    image: postgres:16.9
+    image: debezium/postgres:17
     container_name: postgres_db
     restart: always
     environment:
